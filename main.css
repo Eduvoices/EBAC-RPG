@@ -1,0 +1,70 @@
+header {
+    display: flex;
+    margin-bottom: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 119, 103);
+    color: #fff;
+    }
+    
+    footer {
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(236, 119, 103);
+        color: #fff;
+        height: 90px;
+        display: flex;
+    }
+
+    header img {
+        height: 120px;
+        margin-left: 8px;
+        margin-bottom: 8px;
+        padding: 8px;
+    }
+
+    .carousel-item img {
+        height: 400px;
+        margin-bottom: 32px;
+    }
+
+    .card {
+        padding: 8px;
+        margin-bottom: 16px;
+    }
+
+    .card img {
+        height: 300px;
+    }
+
+    .card p {
+        text-align: center;
+    }
+
+    .card h5 {
+        text-align: center;
+    }
+
+    .fichas {
+        display: grid;
+        grid-template-columns: repeat(3, 32%) ;
+        column-gap: 1%;
+    }
+
+    @media screen and (min-width: 641px) and (max-width: 1023px) {
+        .fichas {
+            display: grid;
+            grid-template-columns: repeat(2, 49%) ;
+            column-gap: 1%;
+            row-gap: 5%;
+            align-content: space-between;
+        }
+        
+    }
+
+    @media screen and (max-width: 640px) {
+        .fichas {
+            display: block;
+            justify-content: center;
+        }
+    }
